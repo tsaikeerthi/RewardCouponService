@@ -12,4 +12,12 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public class PubSubConfiguration {
     private String topic;
     private String subscription;
+
+    public String getSubscription(){
+        return this.subscription;
+    }
+
+    public String getTopic(){
+        return this.topic;
+    }
 }

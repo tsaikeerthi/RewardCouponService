@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 @Slf4j
 public class OutboundRestController {
-    private final OutboundConfiguration.PubsubOutboundGateway messagingGateway;
+    private OutboundConfiguration.PubsubOutboundGateway messagingGateway;
 
     @PostMapping("/")
     public void sendMessage(@RequestBody String message){
-        log.info("Send this message to outbound channgel {}", message);
+        System.out.println("Send this message to outbound channel" + message);
         messagingGateway.sendToPubsub(message);
     }
 
