@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Hamleys Offer from Your Bank</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        .container { width: 100%; max-width: 600px; margin: 0 auto; background-color: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        .header { background-color: #ff0033; color: #ffffff; padding: 20px; border-radius: 10px 10px 0 0; text-align: center; }
+        .header img.hamleys-logo { max-width: 200px; height: auto; margin-bottom: 15px; }
+        .content { padding: 20px; color: #333333; line-height: 1.6; }
+        .footer { background-color: #f9f9f9; padding: 15px; text-align: center; font-size: 14px; color: #666666; border-radius: 0 0 10px 10px; }
+        .footer img.bank-logo { max-width: 100px; height: auto; margin-top: 10px; }
+        .coupon { background-color: #ff0033; color: #ffffff; padding: 20px; border-radius: 8px; text-align: center; margin-top: 20px; }
+        .coupon-code { font-size: 28px; font-weight: bold; letter-spacing: 2px; }
+        .button { display: inline-block; padding: 12px 24px; font-size: 18px; color: #ffffff; background-color: #ff0033; border: 2px solid #ff0033; border-radius: 8px; text-decoration: none; font-weight: bold; transition: background-color 0.3s, color 0.3s; }
+        .button:hover { background-color: #e6002a; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header" style="background-color:white">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Hamleys_logo.png" alt="Hamleys Logo" class="hamleys-logo">
+    </div>
+    <div class="header">
+        <h1>{{OFFER}}</h1>
+    </div>
+    <div class="content">
+        <p>Dear Valued Customer,</p>
+        <p>Enjoy a special discount at Hamleys, the world-famous toy store. Use this exclusive code on your next purchase to save big!</p>
+        <div class="coupon">
+            <p class="coupon-code">{{COUPONCODE}}</p>
+            <p>Apply this code at checkout to redeem your discount.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Your Bank. All rights reserved. <br/> Terms and conditions apply.</p>
+        <img src="https://amslbg.avature.net/portal/4/images/logo.png" alt="Bank Logo" class="bank-logo">
+    </div>
+</div>
+</body>
+</html>
