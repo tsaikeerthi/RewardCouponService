@@ -82,7 +82,7 @@ public class InboundConfiguration {
                     if (transaction.getAmount() > 200) {
 
                         System.out.println("Before Publishing Message");
-                        messagingGateway.sendToPubsub(transaction.getUserId());
+                        messagingGateway.sendToPubsub("{\"userId\":\""+transaction.getUserId()+"\"}");
                         System.out.println("After Publishing Message");
                     }
                 } else {
